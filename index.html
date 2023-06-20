@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/svg+xml" href="assets/img/portafolioIcon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="assets/js/nav.js" defer></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <section id="home" class="home">
+    <div class="content">
+
+      <header class="navbar-container">
+        <div class="header-title">
+          <h1>Jose</h1>
+        </div>
+        <nav id="nav" class="navbar">
+          <ul class="navbar__links" id="links">
+            <li><a class="navbar__links-items choiced" href="#home">HOME</a></li>
+            <li><a class="navbar__links-items" href="#about">ABOUT</a></li>
+            <li><a class="navbar__links-items" href="#projects">PROJECTS</a></li>
+            <li><a class="navbar__links-items" href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <!-------- SOCIAL ICONS --------->
+        <div class="social">
+          <a class="social__items" href="https://www.facebook.com/profile.php?id=100032716093170" target="_blank"><i class='bx bxl-facebook-square bx-sm'></i></a>
+          <a class="social__items" href="https://www.instagram.com/jegc3c/" target="_blank"><i class='bx bxl-instagram-alt bx-sm'></i></a>
+          <a class="social__items" href="https://www.linkedin.com/in/jose-eduardo-garcia-colin/" target="_blank"><i class='bx bxl-linkedin-square  bx-sm'></i></a>
+        </div>
+
+        <!-------- MENU ICON RESPONSIVE --------->
+        <button class="checkbtn" onclick="openNav()"><i class='bx bx-list-ul bx-md'></i></button>
+
+        <div class="overlay-nav" id="mobile-menu">
+          <a href="" class="close" onclick="closeNav()"><i class='bx bx-window-close  bx-sm'></i></a>
+          <div class="overlay-content">
+            <a class="navbar__links-items choiced" href="#home" onclick="closeNav()">HOME</a>
+            <a class="navbar__links-items" href="#about" onclick="closeNav()">ABOUT</a>
+            <a class="navbar__links-items" href="#projects" onclick="closeNav()">PROJECTS</a>
+            <a class="navbar__links-items" href="#contact" onclick="closeNav()">CONTACT</a>
+          </div>
+        </div>
+      </header>
+
+
+      <!-------- PRESENTATION --------->
+      <div class="presentation">
+        <p class="presentation__welcome">Welcome</p>
+        <h2 class="presentation__title">I am <span class="presentation__title-span">Jose Garcia</span>, Web Developer
+        </h2>
+        <p class="presentation__description">I am a certified professional web developer with HTML, CSS, JS and ReactJS
+          and
+          ready to learn new technologies.</p>
+        <a class="presentation__a" href="#projects">Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-------- ABOUT SECTION START --------->
+  <section id="about" class="about">
+
+    <div class="about__container">
+      <div class="flip-img">
+        <div class="flip-img-inner">
+          <div class="about__image flip-img-front">
+            <img class="about__img" src="assets/img/JoseG.png" alt="">
+          </div>
+          <div class="flip-img-back">
+            <h1>Jose Garcia</h1>
+            <div class="img-back-info">
+              <div class="info-age">
+                <span>Age:</span>
+                <p>28</p>
+              </div>
+              <div class="info-address">
+                <span>Location:</span>
+                <p>Jalisco Mexico</p>
+              </div>
+              <div class="info-phone">
+                <span>Phone:</span>
+                <p>+52 332-968-6053</p>
+              </div>
+              <div class="info-email">
+                <span>Email:</span>
+                <p>garciacolin@hotmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content">
+        <h2 class="about__content--title">About Me</h2>
+        <h3 class="about__content--subtitle">Full-Stack Web Developer</h3>
+        <p class="about__content--description">I am a web developer with a passion on technology and programing, ready
+          to learn new technologies. My focus is on continuous improvement and growth. I am a committed person,
+          adaptable to changes and with experience working remotely...</p>
+        <button type="button" class="about__content--btn">
+          <a href="/assets/documents/JoseGarciaCV.pdf" target="_blank" download></a>
+          Download CV
+        </button>
+      </div>
+    </div>
+
+    <div id="skills" class="skills">
+      <div class="skills__container">
+        <div class="skills-title">
+          <h1>Skills</h1>
+        </div>
+        <div class="html container">
+          <i class='bx bxl-html5 bx-md'></i>
+          <h2>HTML5</h2>
+        </div>
+        <div class="css container">
+          <i class="bx bxl-css3 bx-md"></i>
+          <h2>CSS3</h2>
+        </div>
+        <div class="js container">
+          <i class='bx bxl-javascript bx-md'></i>
+          <h2>JS</h2>
+        </div>
+        <div class="react container">
+          <i class='bx bxl-react bx-md'></i>
+          <h2>React</h2>
+        </div>
+        <div class="redux container">
+          <i class='bx bxl-redux bx-md'></i>
+          <h2>Redux</h2>
+        </div>
+        <div class="github container">
+          <i class='bx bxl-github bx-md'></i>
+          <h2>GitHub</h2>
+        </div>
+        <div class="git container">
+          <i class='bx bxl-git bx-md'></i>
+          <h2>Git</h2>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-------- PROJECTS SECTION --------->
+  <section id="projects" class="projects">
+    <h2 class="projects__title">My Projects</h2>
+
+    <div class="row">
+      <div class="project">
+        <div class="overlay"></div>
+        <img class="proyect__img" src="./assets/img/Ecommerce-React.JPG" alt="p1">
+        <div class="info">
+          <a href="https://ecommerce-techno.netlify.app/" target="_blank">
+            <h3>Ecommerce with React</h3>
+          </a>
+          <p>Web Design</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="overlay"></div>
+        <img class="proyect__img" src="./assets/img/Pokedex.JPG" alt="p2">
+        <div class="info">
+          <a href="https://pokedex-pokemoons.netlify.app/" target="_blank">
+            <h3>Pokedex</h3>
+          </a>
+          <p>Web Design</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="overlay"></div>
+        <img class="proyect__img" src="./assets/img/Create-users-CRUD.JPG" alt="p3">
+        <div class="info">
+          <a href="https://create-users-crud.netlify.app/" target="_blank">
+            <h3>Create Users CRUD</h3>
+          </a>
+          <p>Web Design</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="overlay"></div>
+        <img class="proyect__img" src="./assets/img/RickMorty.JPG" alt="p4">
+        <div class="info">
+          <a href="https://rick-mort-by-location.netlify.app/" target="_blank">
+            <h3>Rick & Morty</h3>
+          </a>
+          <p>Web Design</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="overlay"></div>
+        <img class="proyect__img" src="./assets/img/WeatherApp.JPG" alt="p5">
+        <div class="info">
+          <a href="https://weatherlocationweb.netlify.app/" target="_blank">
+            <h3>Weather App</h3>
+          </a>
+          <p>Web Design</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="overlay"></div>
+        <img class="proyect__img" src="./assets/img/Furtune.JPG" alt="p6">
+        <div class="info">
+          <a href="https://fortune-message.netlify.app/" target="_blank">
+            <h3>Furtune Message</h3>
+          </a>
+          <p>Web Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------- CONTACT SECTION --------->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to me!</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><i class='bx bx-map'></i></div>
+          <div class="text">
+            <h3>Location</h3>
+            <p>Jalisco, Mexico</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class='bx bx-phone'></i></div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>+52 332-968-6053</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class='bx bx-envelope'></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>garciacolim@hotmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactForm">
+        <form action="https://formsubmit.co/garciacolin@hotmail.com" method="POST">
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" name="from_name" id="from_name" required>
+            <span>Full Name</span>
+          </div>
+
+          <div class="inputBox">
+            <input type="email" name="email_id" id="email_id" required>
+            <span>Email</span>
+          </div>
+
+          <div class="inputBox">
+            <textarea name="message" id="message" required></textarea>
+            <span>Type your message...</span>
+          </div>
+
+          <div class="inputBox">
+            <input type="submit" id="button" value="Send">
+          </div>
+
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contact">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
