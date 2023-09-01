@@ -612,6 +612,7 @@ a {
 .js,
 .react,
 .redux,
+.tailwind,
 .github,
 .git,
 .node,
@@ -638,6 +639,10 @@ a {
 
 .bxl-redux {
     color: rgb(114, 10, 114);
+}
+
+.bxl-tailwind-css {
+    color: #008bb9;
 }
 
 .bxl-git {
