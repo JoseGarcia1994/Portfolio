@@ -588,12 +588,13 @@ a {
 .backend__lang,
 .aditional__tools {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .container {
-    width: 150px;
-    height: 100px;
+    width: 190px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -616,7 +617,10 @@ a {
 .github,
 .git,
 .node,
-.postgresql {
+.postgresql,
+.remix,
+.react-bootstrap,
+.strapi {
     background: rgb(254, 254, 254);
     background: linear-gradient(0deg, rgba(254, 254, 254, 1) 0%, rgba(99, 99, 99, 0.9192051820728291) 96%);
 }
@@ -649,6 +653,16 @@ a {
     color: rgb(201, 61, 10);
 }
 
+.frontend__lang .remix img,
+.frontend__lang .react-bootstrap img {
+    width: 35px;
+}
+
+.react-bootstrap-title {
+    font-size: 1.3rem;
+}
+
+
 .backend__container {
     max-width: 1100px;
     margin: 0 auto;
@@ -676,6 +690,10 @@ a {
 
 .bxl-postgresql {
     color: #008bb9;
+}
+
+.backend__lang .strapi img {
+    width: 35px;
 }
 
 .aditional__container {
